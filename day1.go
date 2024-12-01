@@ -40,3 +40,34 @@ func day1_1(input string) {
 
 	fmt.Println("Day 1 Part 1", totalDistance)
 }
+
+func day1_2(input string) {
+	lines := strings.Split(strings.TrimSpace(input), "\n")
+
+	var left []int
+	var right []int
+
+	for _, line := range lines {
+		parts := strings.Fields(line)
+
+		leftNumber, _ := strconv.Atoi(parts[0])
+		rightNumber, _ := strconv.Atoi(parts[1])
+
+		left = append(left, leftNumber)
+		right = append(right, rightNumber)
+	}
+
+	rightMap := make(map[int]int)
+
+	for _, num := range right {
+		rightMap[num]++
+	}
+
+	similarityScore := 0
+
+	for _, num := range left {
+		similarityScore += num * rightMap[num]
+	}
+
+	fmt.Println("Day 1 Part 2", similarityScore)
+}
