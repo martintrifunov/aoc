@@ -53,6 +53,6 @@ func main() {
 
 	input := getInput(day)
 
-	day3_1(input)
-	day3_2(input)
+	// day4_1(input)
+	day4_2(input)
 }
