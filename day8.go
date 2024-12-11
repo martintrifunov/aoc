@@ -49,7 +49,7 @@ func day8_1(input string) {
 
 	output := len(antiNodes)
 
-	fmt.Println("Output Day 8 Part 1", output)
+	fmt.Println("Day 8 Part 1", output)
 }
 
 func day8_2(input string) {
@@ -105,5 +105,5 @@ func day8_2(input string) {
 
 	output := len(antiNodes)
 
-	fmt.Println("Output Day 8 Part 2", output)
+	fmt.Println("Day 8 Part 2", output)
 }
