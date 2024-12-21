@@ -5,10 +5,10 @@ import (
 	"strings"
 )
 
-type Point struct {
-	x int
-	y int
-}
+// type Point struct {
+// 	x int
+// 	y int
+// }
 
 func day15_1(input string) {
 	split := strings.Split(strings.TrimSpace(input), "\n\n")
